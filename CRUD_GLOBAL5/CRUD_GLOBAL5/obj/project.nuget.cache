@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uun8ru3kz7BRRS7BYbFeW5MXSAVs7sLxz6V/h4FhitZC5wmzdA4lZdSgoD2AcEpKjz3xNID5IJtp7b/E5lFafQ==",
+  "dgSpecHash": "y7SiaI7sbhuAEabEkv9N0GQbPrE/cfgTxAv9Y8VVMm+oqwhh9ukcZ9aD6speg+tuXy2earI7x28GCRyEHK6wcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leona\\source\\repos\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj",
+  "projectFilePath": "C:\\Users\\leona\\Source\\Repos\\TesteGlobal5\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leona\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\leona\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

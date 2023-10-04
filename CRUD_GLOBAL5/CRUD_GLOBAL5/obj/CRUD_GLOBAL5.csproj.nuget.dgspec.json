@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leona\\source\\repos\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj": {}
+    "C:\\Users\\leona\\Source\\Repos\\TesteGlobal5\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leona\\source\\repos\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj": {
+    "C:\\Users\\leona\\Source\\Repos\\TesteGlobal5\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leona\\source\\repos\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj",
+        "projectUniqueName": "C:\\Users\\leona\\Source\\Repos\\TesteGlobal5\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj",
         "projectName": "CRUD_GLOBAL5",
-        "projectPath": "C:\\Users\\leona\\source\\repos\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj",
+        "projectPath": "C:\\Users\\leona\\Source\\Repos\\TesteGlobal5\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\CRUD_GLOBAL5.csproj",
         "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leona\\source\\repos\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\obj\\",
+        "outputPath": "C:\\Users\\leona\\Source\\Repos\\TesteGlobal5\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
