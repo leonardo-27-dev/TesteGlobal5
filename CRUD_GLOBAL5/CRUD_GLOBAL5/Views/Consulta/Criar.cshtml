@@ -1,0 +1,66 @@
+﻿@model ConsultaModel
+@{
+    ViewData["Title"] = "Registrar Marca";
+}
+
+<style>
+    .panel {
+        border-radius: 15px;
+        border-color: burlywood;
+        box-shadow: 0.1px 3px 9px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .margin {
+        padding: 2%;
+    }
+
+    .size-btn {
+        width: 20%;
+    }
+
+    .form-checkbox{
+        position: absolute;
+        margin-top: 7px;
+        margin-left: 0.75rem;
+    }
+
+    .align-buttons{
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+</style>
+
+<div>
+    <h1 class="display-4 text-center">Registrar Marca</h1>
+    <div class="panel">
+        <div class="margin">
+            <form asp-controller="Consulta" asp-action="Criar" method="post">
+                <div class="form-floating">
+                    <label for="nacional">Nacional</label>
+                    <select asp-for="Nacional" class="form-select" id="floatingSelect">
+                        <option value="1" asp-for="Nacional">Sim</option>
+                        <option value="0" asp-for="Nacional">Não</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-floating">
+                    <label for="marcaInput">Marca</label>
+                    <input type="text" asp-for="Marca" class="form-control" id="marcaInput">
+                    @Html.ValidationMessageFor(x => x.Marca)
+                </div>
+                <br />
+                <div class="form-floating">
+                    <label for="Ativo">Ativo</label>
+                    <input type="checkbox" checked asp-for="Ativo" class="form-checkbox" id="ativoCheckbox">
+                </div>
+                <br />
+                <div class="d-grid gap-2 d-md-block align-buttons">
+                    <button type="submit" class="btn btn-primary size-btn">Cadastrar</button>
+                    <a class="btn btn-secondary size-btn" asp-controller="Consulta" asp-action="Index">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

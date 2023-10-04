@@ -1,0 +1,97 @@
+﻿@model List<ConsultaModel>
+@{
+    ViewData["Title"] = "Marcas";
+}
+
+<style>
+    .panel {
+        border-radius: 15px;
+        border-color: burlywood;
+        box-shadow: 0.1px 3px 9px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .margin {
+        padding: 2%;
+    }
+
+    .size-btn {
+        width: 20%;
+    }
+
+    .form-checkbox {
+        position: absolute;
+        margin-top: 7px;
+        margin-left: 0.75rem;
+    }
+
+    .align-buttons {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+</style>
+
+<div class="text-center">
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Fechar">X</button>
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Fechar">X</button>
+            @TempData["MensagemErro"]
+        </div>
+    }
+
+    <br />
+
+    <h1 class="display-4">Consulta de Marcas</h1>
+    <div class="panel">
+        <div class="margin">
+            <div class="d-grid gap-2 d-md-block align-buttons">
+                <a class="btn btn-secondary size-btn" role="button" asp-controller="consulta" asp-action="criar">Cadastrar</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="panel">
+        <div class="margin">
+            <table class="table table-striped" id="table-marcas">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome da Marca</th>
+                        <th scope="col">Nacional</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (ConsultaModel item in Model)
+                        {
+                            <tr>
+                                <td>@item.Marca</td>
+                                <td>@(item.Nacional == 1 ? "Sim" : "Não")</td>
+                                <td>@(item.Ativo ? "Ativo" : "Inativo")</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a class="btn btn-primary size-btn" role="button" asp-route-id="@item.Id" asp-controller="consulta" asp-action="editar">Editar</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
