@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css" />
-</head>
+</head> 
+
 <body style="background-color: rgba(170, 165, 140, 0);">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container-flui">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +20,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" style="color: white!important;" asp-area="" asp-controller="home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="consulta" asp-action="Index">Consulta</a>
+                            <a class="nav-link text-dark" style="color: white!important;" asp-area="" asp-controller="consulta" asp-action="Index">Consulta</a>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +38,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Sistema de Regristro de Marcas
+            <a class="color-write">&copy; 2023 - Sistema de Regristro de Marcas</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

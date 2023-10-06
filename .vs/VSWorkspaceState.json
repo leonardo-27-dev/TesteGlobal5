@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CRUD_GLOBAL5",
+    "\\CRUD_GLOBAL5\\CRUD_GLOBAL5",
+    "\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\Views",
+    "\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\Views\\Consulta"
   ],
-  "SelectedNode": "\\C:\\Users\\leona\\Source\\Repos\\TesteGlobal5",
+  "SelectedNode": "\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\Views\\Consulta\\Editar.cshtml",
   "PreviewInSolutionExplorer": false
 }

@@ -5,6 +5,8 @@
 
 <style>
     .panel {
+        background-color: lavender;
+        padding: 15px;
         border-radius: 15px;
         border-color: burlywood;
         box-shadow: 0.1px 3px 9px 0px rgba(0, 0, 0, 0.2);
@@ -53,18 +55,18 @@
 
     <br />
 
-    <h1 class="display-4">Consulta de Marcas</h1>
+    <h1 class="display-4" style="color: white">Consulta de Marcas</h1>
     <div class="panel">
         <div class="margin">
             <div class="d-grid gap-2 d-md-block align-buttons">
-                <a class="btn btn-secondary size-btn" role="button" asp-controller="consulta" asp-action="criar">Cadastrar</a>
+                <a class="btn btn-secondary size-btn button-submit" role="button" asp-controller="consulta" asp-action="criar">Cadastrar</a>
             </div>
         </div>
     </div>
     <br />
     <div class="panel">
         <div class="margin">
-            <table class="table table-striped" id="table-marcas">
+            <table class="table table-striped" style="border: 1px solid;border-radius: 15px;" id="table-marcas">
                 <thead>
                     <tr>
                         <th scope="col">Nome da Marca</th>
@@ -79,12 +81,12 @@
                         @foreach (ConsultaModel item in Model)
                         {
                             <tr>
-                                <td>@item.Marca</td>
-                                <td>@(item.Nacional == 1 ? "Sim" : "Não")</td>
-                                <td>@(item.Ativo ? "Ativo" : "Inativo")</td>
+                                <td style="text-align: initial;vertical-align: middle;">@item.Marca</td>
+                                <td style="text-align: initial;vertical-align: middle;">@(item.Nacional == 1 ? "Sim" : "Não")</td>
+                                <td style="text-align: initial;vertical-align: middle;">@(item.Ativo ? "Ativo" : "Inativo")</td>
                                 <td>
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a class="btn btn-primary size-btn" role="button" asp-route-id="@item.Id" asp-controller="consulta" asp-action="editar">Editar</a>
+                                        <a class="btn btn-primary size-btn button-submit" role="button button-submit" asp-route-id="@item.Id" asp-controller="consulta" asp-action="editar">Editar</a>
                                     </div>
                                 </td>
                             </tr>

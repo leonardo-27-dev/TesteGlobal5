@@ -5,6 +5,8 @@
 
 <style>
     .panel {
+        background-color: lavender;
+        padding: 15px;
         border-radius: 15px;
         border-color: burlywood;
         box-shadow: 0.1px 3px 9px 0px rgba(0, 0, 0, 0.2);
@@ -30,36 +32,59 @@
         justify-content: center;
         gap: 10px;
     }
+
+    .input-form {
+        background: none;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        color: black;
+        font-size: 15px;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+
+    .label-input {
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    .input-form:focus ~ .label-input,
+    .input-form:valid ~ .label-input {
+        top: -20px;
+        font-size: 12px;
+        color: dodgerblue;
+    }
 </style>
 
 <div >
-    <h1 class="display-4 text-center">Editar Marca</h1>
+    <h1 class="display-4 text-center" style="color: white">Editar Marca</h1>
     <div class="panel">
         <div class="margin">
             <form asp-controller="Consulta" asp-action="Alterar" method="post">
                 <input type="hidden" asp-for="Id"/>
                 <div class="form-floating">
-                    <label for="nacional">Nacional</label>
-                    <select asp-for="Nacional" class="form-select" id="floatingSelect">
+                    <label for="nacional" class="label-input">Nacional</label>
+                    <select asp-for="Nacional" class="form-select input-form" id="floatingSelect">
                         <option value="1" asp-for="Nacional">Sim</option>
                         <option value="0" asp-for="Nacional">Não</option>
                     </select>
                 </div>
                 <br />
                 <div class="form-floating">
-                    <label for="marcaInput">Marca</label>
-                    <input type="text" asp-for="Marca" class="form-control" id="marcaInput">
+                    <label for="marcaInput" class="label-input">Marca</label>
+                    <input type="text" asp-for="Marca" class="form-control input-form" id="marcaInput">
                     @Html.ValidationMessageFor(x => x.Marca)
                 </div>
                 <br />
-                <div class="form-floating">
+                <div class="form-floating" class="label-input">
                     <label for="Ativo">Ativo</label>
                     <input type="checkbox" asp-for="Ativo" class="form-checkbox" id="ativoCheckbox">
                 </div>
                 <br />
                 <div class="d-grid gap-2 d-md-block align-buttons">
-                    <button type="button" class="btn btn-primary size-btn btn-save">Editar</button>
-                    <a class="btn btn-secondary size-btn" asp-controller="Consulta" asp-action="Index">Voltar</a>
+                    <button type="button" class="btn btn-primary size-btn btn-save button-submit">Salvar</button>
+                    <a class="btn btn-secondary size-btn button-back" asp-controller="Consulta" asp-action="Index">Voltar</a>
                 </div>
             </form>
         </div>
@@ -76,8 +101,8 @@
                     <p>Deseja salvar as alteração realizadas?</p>
                 </div>
                 <div class="modal-footer align-buttons">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
-                    <button type="button" class="btn btn-primary" id="simBtn">Sim</button>
+                    <button type="button" class="btn btn-secondary button-back" data-bs-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-primary button-submit" id="simBtn">Sim</button>
                 </div>
             </div>
         </div>
