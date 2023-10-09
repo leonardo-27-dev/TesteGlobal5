@@ -57,12 +57,13 @@
     }
 </style>
 
-<div >
-    <h1 class="display-4 text-center" style="color: white">Editar Marca</h1>
+<div>
     <div class="panel">
         <div class="margin">
+            <h1 class="display-4 text-center h1-styles">Editar Marca</h1>
+            <hr class="separator">
             <form asp-controller="Consulta" asp-action="Alterar" method="post">
-                <input type="hidden" asp-for="Id"/>
+                <input type="hidden" asp-for="Id" />
                 <div class="form-floating">
                     <label for="nacional" class="label-input">Nacional</label>
                     <select asp-for="Nacional" class="form-select input-form" id="floatingSelect">
@@ -81,7 +82,7 @@
                     <label for="Ativo">Ativo</label>
                     <input type="checkbox" asp-for="Ativo" class="form-checkbox" id="ativoCheckbox">
                 </div>
-                <br />
+                <hr class="separator">
                 <div class="d-grid gap-2 d-md-block align-buttons">
                     <button type="button" class="btn btn-primary size-btn btn-save button-submit">Salvar</button>
                     <a class="btn btn-secondary size-btn button-back" asp-controller="Consulta" asp-action="Index">Voltar</a>

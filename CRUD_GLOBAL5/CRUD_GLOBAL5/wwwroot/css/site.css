@@ -94,7 +94,7 @@ body {
 
 
 .button-submit {
-    background-image: linear-gradient(-197deg, red, blue);
+    background-image: linear-gradient(350deg, black, white);
     border: none;
     color: white;
     font-size: 15px;
@@ -103,11 +103,12 @@ body {
 }
 
     .button-submit:hover {
-        background-image: linear-gradient(-197deg, blue, red)
+        background-image: linear-gradient(350deg, white, black);
+        box-shadow: 5px 5px black;
     }
 
 .button-back {
-    background-image: linear-gradient(-27deg, red, blue);
+    background-image: linear-gradient(350deg, black, white);
     border: none;
     color: white;
     font-size: 15px;
@@ -116,5 +117,17 @@ body {
 }
 
     .button-back:hover {
-        background-image: linear-gradient(-27deg, blue, red)
+        background-image: linear-gradient(350deg, white, black);
+        box-shadow: 5px 5px black;
     }
+
+.separator {
+    border: 0;
+    border-top: 1px solid black;
+}
+
+.h1-styles {
+    color: black;
+    font-size: 45px;
+    font-family: "Gill Sans", sans-serif;
+}

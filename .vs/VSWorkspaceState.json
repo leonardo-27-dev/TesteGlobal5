@@ -4,8 +4,9 @@
     "\\CRUD_GLOBAL5",
     "\\CRUD_GLOBAL5\\CRUD_GLOBAL5",
     "\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\Views",
-    "\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\Views\\Consulta"
+    "\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\Views\\Consulta",
+    "\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\Views\\Shared"
   ],
-  "SelectedNode": "\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\Views\\Consulta\\Editar.cshtml",
+  "SelectedNode": "\\CRUD_GLOBAL5\\CRUD_GLOBAL5\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

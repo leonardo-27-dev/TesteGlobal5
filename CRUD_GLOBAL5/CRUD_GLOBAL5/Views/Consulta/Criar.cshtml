@@ -20,20 +20,20 @@
         width: 20%;
     }
 
-    .form-checkbox{
+    .form-checkbox {
         position: absolute;
         margin-top: 7px;
         margin-left: 0.75rem;
     }
 
-    .align-buttons{
+    .align-buttons {
         display: flex !important;
         align-items: center;
         justify-content: center;
         gap: 10px;
     }
 
-    .input-form{
+    .input-form {
         background: none;
         border: none;
         border-bottom: 1px solid black;
@@ -44,13 +44,13 @@
         letter-spacing: 2px;
     }
 
-    .label-input{
+    .label-input {
         pointer-events: none;
         transition: .5s;
     }
 
     .input-form:focus ~ .label-input,
-    .input-form:valid ~ .label-input{
+    .input-form:valid ~ .label-input {
         top: -20px;
         font-size: 12px;
         color: dodgerblue;
@@ -58,9 +58,10 @@
 </style>
 
 <div>
-    <h1 class="display-4 text-center" style="color: white">Cadastrar Marca</h1>
     <div class="panel">
         <div class="margin">
+            <h1 class="display-4 text-center h1-styles">Cadastrar Marca</h1>
+            <hr class="separator">
             <form asp-controller="Consulta" asp-action="Criar" method="post">
                 <div class="form-floating">
                     <label for="nacional" class="label-input">Nacional</label>
@@ -80,7 +81,7 @@
                     <label for="Ativo" class="label-input">Ativo</label>
                     <input type="checkbox" checked asp-for="Ativo" class="form-checkbox" id="ativoCheckbox">
                 </div>
-                <br />
+                <hr class="separator">
                 <div class="d-grid gap-2 d-md-block align-buttons">
                     <button type="submit" class="btn btn-primary size-btn button-submit">Cadastrar</button>
                     <a class="btn btn-secondary size-btn button-back" asp-controller="Consulta" asp-action="Index">Voltar</a>
